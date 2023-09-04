@@ -1,27 +1,26 @@
 public class TiposVariaveis {
-    public static void main(String[] args) throws Exception {
+
+public static void main(String[]args){
+
+   
+// meus dados
+    String nome = "Cristiano";
+    int idade = 24;
+    char sexo = 'M';
+    String profissao = "Analista de Cibersegurança";
+    String  graduacao = "Cybersecurity";
+    String universidade = "Saint Leo University";
     
- int numero1 = 1;
- int numero2 = 2;
+// Dados da julia
 
-    boolean simNao = numero1 == numero2;
+    String nome2 = "julia";
+    int idade2 = 23;
+    char sexo2 = 'F';
+    String profissao2 = "Fisioterapeuta";
+    String graduacao2 = "Fisioterapia";
+    String universidade2 = "UNIP";
 
-    if (numero1 < numero2) {
-        System.out.println("Essa condição é verdadeira");
-    }else
-        System.out.println("Essa condição é falsa");
-
-    
-    System.out.println("A variavel numeroUm é igual a numerodois? " + simNao);
-
-    simNao = numero1 != numero2;
-        System.out.println("A variavel numeroUm é diferente da variavel numeroDois? " + simNao);
-
-    simNao = numero1 > numero2;
-        System.out.println("A variavel numeroUm é maior que a numeroDois? " +simNao);
-
-    simNao = numero1 < numero2;
-        System.out.println("A variavel numeroUm é menor que a numeroDois? " +simNao);
+    System.out.println(nome);
 
     }
 }
