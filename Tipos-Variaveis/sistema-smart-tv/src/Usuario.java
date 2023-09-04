@@ -6,7 +6,7 @@ public class Usuario {
         smartTv.diminuirVolume();
         smartTv.diminuirVolume();
         smartTv.aumentarVolume();
-            System.out.println("Volume atual: " + smartTv.volume);
+             System.out.println("Volume atual: " + smartTv.volume);
 
         smartTv.mudarCanal(13);
              System.out.println("Qual canal a TV está: " + smartTv.canal);
