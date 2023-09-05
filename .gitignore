@@ -23,3 +23,5 @@
 hs_err_pid*
 replay_pid*
 Tipos-Variaveis/.vscode/settings.json
+Java-Terminal/.vscode/settings.json
+Java-Terminal/.vscode/launch.json
