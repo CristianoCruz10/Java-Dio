@@ -27,7 +27,12 @@ public class UsuarioBanco {
     minhaConta.sacar(sacarValor);
     minhaConta.mostrarSaldo();
 
-    scanner.close();
+    System.out.println("Digite 1 para consultar seu extrato");
+    double extrato = scanner.nextDouble();
+    minhaConta.extrato();
+   
+
+     scanner.close();
         
     }
 }

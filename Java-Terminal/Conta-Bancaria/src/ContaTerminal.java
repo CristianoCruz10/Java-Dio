@@ -1,19 +1,28 @@
 import java.util.Scanner;
+import java.util.Locale;
 
 public class ContaTerminal {
     private int agencia;
     private int conta;
     private double saldo;
+    private double extrato;
+
 
     public ContaTerminal(int agencia, int conta) {
         this.agencia = agencia;
         this.conta = conta;
         this.saldo = 0; // saldo da conta, se inicia com zero
+        this.extrato = 0; // Inicializa o extrato com zero
+    }
+
+    public void extrato() {
+        System.out.println("O saldo da sua conta é: " + saldo);
     }
 
     public void depositar(double valor) {
         if (valor > 0) {
             saldo += valor;
+            extrato += valor; // Adiciona o valor ao extrato
             System.out.println("Depósito de R$ " + valor + " Realizado com sucesso.");
         } else {
             System.out.println("Valor depositado inválido.");
@@ -33,6 +42,7 @@ public class ContaTerminal {
             if (resposta.equals("sim")) {
                 if (valor <= saldo) {
                     saldo -= valor;
+                    extrato -= valor; // Subtrai o valor do extrato
                     System.out.println("Saque de R$" + valor + " Realizado com sucesso.");
                 } else {
                     System.out.println("Saldo insuficiente para realizar o saque!");
@@ -45,6 +55,6 @@ public class ContaTerminal {
         } else {
             System.out.println("Valor do saque inválido!");
         }
+    
     }
 }
-
